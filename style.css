@@ -1,0 +1,39 @@
+body {
+    background-color:#ac8650;
+    font-family:'Karla', sans-serif;
+    font-size:15px;
+    word-wrap:break-word;
+}
+
+#container {
+    position:absolute;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width:100%;
+}
+
+#content {
+    background-color:white;
+    padding:5%;
+    width:40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+#content img {
+    width:75px;
+    padding:5px;
+    border:5px dashed #ac8650;
+}
+
+#content li {
+    color:white;
+    font-weight:500;
+    list-style-type:none;
+    background-color:#ac8650;
+    margin-bottom:10px;
+    padding:10px;
+}
