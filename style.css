@@ -1,5 +1,10 @@
+:root {
+    --white:#ffffff;
+    --maincolor:#ac8650;
+}
+
 body {
-    background-color:#ac8650;
+    background-color:var(--maincolor);
     font-family:'Karla', sans-serif;
     font-size:15px;
     word-wrap:break-word;
@@ -12,6 +17,10 @@ body {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width:100%;
+}
+
+#navigation button {
+    position:left;
 }
 
 #content {
