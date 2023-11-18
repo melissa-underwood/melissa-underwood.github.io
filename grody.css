@@ -9,11 +9,10 @@
 
     --bodyText:'Montserrat';
     --headingText:'Gluten';
-    --titleText:'Special Elite';
+    --titleText:'Gluten';
 }
 
 body {
-    background-image: url("Assets/background.png");
     background-attachment: fixed;
     font-family: var(--bodyText);
     background-color: var(--dark1);
@@ -29,6 +28,10 @@ h1 {
     text-shadow:1px 1px var(--dark1);
 }
 
+.bio {
+    text-align: center;
+}
+
 #main {
     background-color: white;
     width:800px;
@@ -40,6 +43,16 @@ h1 {
 
 #main img {
     width:100%;
+}
+
+#main button {
+    font-size:20px;
+    font-family: var(--headingText);
+    background-color: var(--accent1);
+    color: var(--accentText);
+    border:none;
+    border-radius:10px;
+    padding:10px 20px;
 }
 
 /* GRID LAYOUT */
@@ -54,25 +67,29 @@ h1 {
     clear: both;
 }
 
-.row-title {
+#main h2 {
     color:var(--accentText);
     background-color: var(--accent1); 
-    border:1px solid var(--darkaccent1);
     font-family: var(--headingText);
     font-size: 25px;
-    margin:0px;
-    padding:5px 10px 10px 10px;
+    margin:0px 0px, 10px, 0px;
+    padding:20px;
 
+}
+
+#main h3 {
+    font-family: var(--headingText);
+    font-size:20px;
 }
 
 .left {
     float:left;
-    width:70%;
+    width:50%;
 }
 
 .right {
     float:right;
-    width:30%;
+    width:50%;
 }
 
 .right img {
@@ -95,11 +112,13 @@ h1 {
     text-decoration: none;
 }
 
-.material-symbols-outlined {
-    position: left;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 800,
-  'GRAD' 0,
-  'opsz' 24
+/* FOOTER */
+footer {
+    background-color: var(--accentText);
+    margin:0px;
+    padding:0px;
+}
+
+footer p {
+    margin:0px;
 }

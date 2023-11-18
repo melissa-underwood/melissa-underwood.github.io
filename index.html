@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <head>
     <title>Melissa Underwood</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="variables.css" rel="stylesheet">
+
+    <script src="main.js"></script>
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;800&display=swap" rel="stylesheet"> 
-    
+
     <!-- ICONS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body>
-    <div id="navigation"><button><span class="material-symbols-outlined">menu</span></button>
-    </div>
 
 <div id="container">
-<div id="content">
-    <img src="Assets/Images/foof.jpeg">
-    <h1>MELISSA UNDERWOOD</h1>
-    <h2>melissanneunderwood@gmail.com</h2>
-    <li>Computer Science Student at Kent State University
-    <li>Part-Time Receptionist at a Senior Living Home
+    <div id="card">
+        <div id="header">
+            <img id="content-icon" src="Assets/Images/author.jpg">
+            <h1 id="header-title">MELISSA UNDERWOOD</h1>
+            <h2 id="header-email">melissanneunderwood@gmail.com</h2>
+        </div>
+        <div id="navigation">
+            <button onclick="aboutMe()">About</button>
+            <button><a target="_blank" href="https://cogshell.tumblr.com/">Tumblr</a></button>
+            <button onclick="resume()">Resume</button>
+        </div>
+        <div id="content">
+        </div>
+    </div>
 </div>
-</div>
+
 </body>
 </html>

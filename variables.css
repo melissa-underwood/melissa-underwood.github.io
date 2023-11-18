@@ -1,0 +1,10 @@
+:root {
+    /* FONTS */
+    --bodyFont:'Karla', sans-serif;
+    /* PRIMARY COLORS */
+    --white:#ffffff;
+
+    /* MAIN PAGE COLORS */
+    --pageBackground:#ac8650;
+    --border:#836438;
+}
