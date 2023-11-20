@@ -9,7 +9,9 @@ function aboutMe() {
 function resume() {
     document.getElementById("card").innerHTML += "<span onclick=\"location.reload()\" class=\"material-symbols-outlined navi navi-back\">arrow_back_ios</span>";
 
-    
+    document.body.setAttribute('overflow', 'auto')
+
+    document.getElementById("header-deco").setAttribute('style', 'display:none;');
     document.getElementById("content-icon").setAttribute('style', 'display:none;');
     document.getElementById("navigation").setAttribute('style', 'display:none;');
 
