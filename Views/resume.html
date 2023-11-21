@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <title>Melissa Underwood</title>
+    <link href="/Style/main.css" rel="stylesheet">
+    <link href="/Style/resume.css" rel="stylesheet">
+    <link href="/Style/variables.css" rel="stylesheet">
+
+    <script src="/index.js"></script>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;800&display=swap" rel="stylesheet"> 
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script>
+    function scrollView() {
+        document.getElementById("education").scrollIntoView();
+    }
+    </script>
+
+</head>
+
+<body onload="scrollView()">
+<div id="container">
+    <div class="card" >
+        <div id="header" class="header">
+            <div id="content-icon">
+                <img id="content-icon" class="header-icon" src="/Assets/Images/author.jpg">
+            </div>
+            <h1 id="header-title">MELISSA UNDERWOOD</h1>
+            <h2 id="header-email">melissanneunderwood@gmail.com</h2>
+        </div>
+
+        <div id="navigation">
+            <a href="/index.html"><button>Home</button></a>
+        </div>
+    </div>
+
+    <div id="education" class="card">
+        <span class="material-symbols-outlined card-icon" style="line-height: 2;">school</span>
+
+        <h1>Education</h1>
+        <h2>Kent State University</h2>
+        <h3>Bachelor of Science in Computer Science <span style="float:right;">August 2019 - <i>Present</i></span></h3>
+        <h4>Relevant Courses</h4>
+            <li>CSI: Procedural Programming, Object Oriented Programming</li>
+            <li>CSII: Data Structures</li>
+            <li>CSIII: Programming Patterns</li>
+            <li>Intro to Database System Design</li>
+            <li>Software Engineering</li>
+    </div>
+
+    <div id="workHistory" class="card">
+        <span class="material-symbols-outlined card-icon" style="line-height: 2;">work</span>
+        <h1>Work History</h1>
+        <h2>Vitalia Senior Living</h2>
+        <h3>Receptionist <span style="float:right;">October 2023 - <i>Present</i></span></h3>
+            <li>Greet and welcome visitors upon arrival</li>
+            <li>Input work and resident request into management platform and Microsoft calendar</li>
+            <li>Answered phone calls and redirected them to destination</li>
+        <h3>Server <span style="float:right;">April 2022 - <i>Present</i></span></h3>
+            <li>Worked in a fast-pace environment</li>
+            <li>Heavy multitasking skills</li>
+            <li>Assisted in training new employees</li>
+
+        <button id="expandWork" onclick="expandWorkHistory()" style="padding:5px 30px;margin-top:20px;"><span class="material-symbols-outlined">expand_more</span></button>
+        <script>
+            function expandWorkHistory() {
+                document.getElementById("expandWork").style.display = "none";
+                const workHistory = document.getElementById("workHistory");
+                workHistory.innerHTML += "<h2>Walmart</h2>";
+                workHistory.innerHTML += "<h3>Food & Consumables Associate <span style=\"float:right;\">August 2021 - February 2022</span></h3>";
+                workHistory.innerHTML += "<h3>Stocking 2 Associate <span style=\"float:right;\">April 2020 - August 2021</span></h3>";
+            }
+        </script>
+    </div>
+
+    <div class="card">
+        <span class="material-symbols-outlined card-icon" style="line-height: 2;">computer</span>
+        <h1>Skills</h1>
+        <li>Quick learner</li>
+        <li>Multitasking skills</li>
+        <li>Microsoft Office</li>
+        <li>Photoshop</li>
+        <h3>Languages</h3>
+            <li>English</li>
+            <li>Filipino (Cebuano/Bisaya)</li>
+        <h3>Programming Languages</h3>
+            <li>C++</li>
+            <li>HTML, CSS, Javascript</li>
+        
+    </div>
+</div>
+
+</body>
+</html>

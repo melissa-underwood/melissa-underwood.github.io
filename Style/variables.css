@@ -1,6 +1,8 @@
 :root {
     /* FONTS */
     --bodyFont:'Karla', sans-serif;
+    --headingText:'Gluten';
+    
     /* PRIMARY COLORS */
     --white:#ffffff;
 
