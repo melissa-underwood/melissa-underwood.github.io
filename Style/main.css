@@ -8,6 +8,15 @@ body {
     font-size:15px;
     word-wrap:break-word;
     overflow-x: hidden;
+    margin:0px;
+    padding:0px;
+    color:var(--bodyColor);
+}
+
+hr {
+    width:80%;
+    border: 5px solid var(--border);
+    border-radius: 5px;
 }
 
 h1 {
@@ -18,82 +27,144 @@ h1 {
     position:absolute;
     width:100%;
 }
-
+/* HOLDS ALL CONTENT INFO */
 .card {
     background-color:var(--white);
-    box-shadow: 10px 10px var(--border);
+    box-shadow: 10px 10px var(--red);
     padding:5%;
-    width:40%;
+    width: 60%;
+    text-align:center;
     margin-left: auto;
     margin-right: auto;
-    text-align:center;
     line-height: 150%;
     border-radius: 15px;
     position:relative;
 }
 
-.card button  {
-    font-family:var(--bodyFont);
-    background-color: var(--pageBackground);
-    box-shadow: 3px 3px var(--border);
-    border-radius: 5px;
-    color:var(--white);
-    padding:10px 30px;
-    margin:5px 10px;
-    border:none;
+/* SUB CARDS */
+.container { /*of cards*/
+    background-color:var(--cardBackground);
+    box-shadow: inset 1 1 5px var(--debug);
+
+}
+.content {
+    box-shadow: 10px 10px var(--pageBackground);
 }
 
-.card button:hover { cursor:pointer; }
-
-.card button a {
-    color:white;
-    text-decoration: none;
+/* INDEX CARD STYLING */
+.index-card {
+    width:40%;
 }
 
 .header-icon {
-    border:5px dashed var(--border);
+    position:relative;
+}
+.header-icon img {
+    border:5px dashed var(--pageBackground);
     width:75px;
     padding:5px;
     margin:0px 10px;
 }
+.header-icon p {
+    text-align: justify;
+    width:200px;
+}
+/**/
 
-.header-deco {
+/* CARD BUTTON LINKS */
+.quick-links button  {
+    font-family:var(--bodyFont);
+    background-color: var(--quickLinkButton);
+    box-shadow: 3px 3px var(--quickLinkShadow);
+    border-radius: 5px;
+    color:var(--quickLinkText);
+    padding:10px 30px;
+    margin:5px 10px;
     border:none;
-    width:180px;
-    margin:0px;
+    font-weight: bold;
+}
+.quick-links button:hover { cursor:pointer; }
+.quick-links button a {
+    color:var(--quickLinkText);
+    text-decoration: none;
+}
+/**/
+
+/* ICON LINKS */
+.side-links {
+    position:absolute;
+    left:20px;
+    top:0px;
+    list-style-type: none;
     padding:0px;
-    padding-bottom:15px;
+    border:0px;
+    margin:0px;
+}
+.side-links a {
+    display: list-item;
+    background-color: var(--sidelinkButton);
+    box-shadow: 3px 3px var(--sidelinkShadow);
+    border-radius: 5px;
+    padding:10px;
+    margin:15px 0px;
+    width:20px;
+    height:20px;
+    color:var(--sidelinkText);
+    text-decoration: none;
+    line-height: 1;
+    font-size: 20px;
+}
+/**/
 
+/* FOOTER */
+.closing-info {
+    margin:0px;
+    background-color: var(--border);
+    text-align: center;
+    color:var(--white);
+    padding:50px 0px;
+}
+.closing-info button {
+    background-color: var(--white);
+    box-shadow: 3px 3px var(--sidelinkShadow);
+    border-radius: 5px;
+    color:var(--sidelinkText);
+    padding:10px 30px;
+    margin:5px 10px;
+    border:none;
+    font-size: 20px;
+}
+/**/
+
+.tooltip {
+    position: absolute;
+    padding:15px;
+    background-color: var(--sidelinkButton);
+    box-shadow: 3px 3px var(--green);
+    border-radius: 5px;
 }
 
-.header-deco img {
-    width:100%;
-
+.tooltip-about {
+    width:225px;
+    height:100px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
 }
 
-/* GOOGLE ICONS */
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 800,
-    'GRAD' 0,
-    'opsz' 48;
-}
-
+/* SCROLLBAR */
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
 }
-
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px #adadad; 
     background: #ffffff;
 }
-  
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: var(--pageBackground);
   box-shadow: inset 0 0 5px var(--border); 
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background: var(--border);
 }
+/**/

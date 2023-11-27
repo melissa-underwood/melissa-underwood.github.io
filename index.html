@@ -2,6 +2,7 @@
 <head>
     <title>Melissa Underwood</title>
     <link href="/Style/main.css" rel="stylesheet">
+    <link href="/Style/about.css" rel="stylesheet">
     <link href="/Style/variables.css" rel="stylesheet">
 
     <script src="/index.js"></script>
@@ -13,29 +14,46 @@
 
     <!-- ICONS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/29dc434267.js" crossorigin="anonymous"></script>
 </head>
 
 <body onload="singleCard()">
 
+<script>
+    function displayAbout() {
+        const txt = document.getElementById("aboutText");
+        txt.style.visibility = "visible";
+        txt.fade
+    }
+</script>
+
 <div id="container">
-    <div class="card">
-        <div id="header" class="header">
-            <div id="content-icon">
-                <img id="header-deco" class="header-deco" src="Assets/Images/winter-trees.png">
-                <img id="content-icon" class="header-icon" src="Assets/Images/author.jpg">
-                <img class="header-deco" src="Assets/Images/winter-trees.png">
-            </div>
-            <h1 id="header-title">MELISSA UNDERWOOD</h1>
-            <h2 id="header-email">melissanneunderwood@gmail.com</h2>
+    <div class="card index-card">
+        <div class="header-icon">
+            <img src="/Assets/Images/author.jpg">
         </div>
-        <div id="navigation">
-            <button onclick="aboutMe()">About</button>
-            <a target="_blank" href="https://cogshell.tumblr.com/"><button>Tumblr</button></a>
+
+        <h1 id="header-title">MELISSA UNDERWOOD</h1>
+        <h2 id="header-email">melissanneunderwood@gmail.com</h2>
+
+        <div class="quick-links">
+            <button onclick="displayAbout()">About</button>
             <a href="/Views/resume.html"><button>Resume</button></a>
         </div>
-        <div id="content">
+
+        <div class="side-links">
+            <a href="https://www.instagram.com/melscatparty/" target="_blank" class="fa-brands fa-instagram"></a>
+            <a href="https://github.com/melissa-underwood" target="_blank" class="fa-brands fa-github"></a>
+            <a href="https://cogshell.tumblr.com/" target="_blank" class="fa-brands fa-tumblr"></a>
+            <a href="https://www.goodreads.com/user/show/78022394-m-u" target="_blank" class="fa-brands fa-goodreads"></a>
+            <a href="https://steamcommunity.com/id/cogshell/" target="_blank" class="fa-brands fa-steam"></a>
         </div>
     </div>
+</div>
+
+<div class="tooltip tooltip-about">
+    <p>Hi! I'm a 22 year-old college student. In my freetime I play video games, spend time with my cats, or read.</p>
 </div>
 
 </body>

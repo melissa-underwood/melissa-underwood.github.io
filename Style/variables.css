@@ -5,10 +5,24 @@
     
     /* PRIMARY COLORS */
     --white:#ffffff;
+    --red:#FE4A49;
+    --green:#52e046;
+    --blue:#2AB7CA;
+    --yellow:#FED766;
 
-    /* MAIN PAGE COLORS */
-    --pageBackground:#ac8650;
-    --border:#836438;
+    --pageBackground:#121113;
+    --cardBackground:#1d1b1f;
+    --bodyColor:#222725;
+
+    /* QUICK LINK */
+    --quickLinkButton:#121113;
+    --quickLinkShadow:#2AB7CA;
+    --quickLinkText:#F7F7F2;
+
+    /* SIDE LINKS */
+    --sidelinkButton:#E6E6EA;
+    --sidelinkShadow:#FED766;
+    --sidelinkText:#121113;
 
     --debug:rgb(8, 222, 19);
 }

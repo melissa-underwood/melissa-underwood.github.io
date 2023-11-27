@@ -16,8 +16,18 @@
     background-color: var(--pageBackground);
     color:var(--white);
     border-radius: 15px;
-    height:50px;
-    width:50px;
-    margin-bottom:10px;
-    box-shadow: 5px 5px var(--border);
+    box-shadow: 5px 5px var(--blue);
+    padding:15px;
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.expand-button {
+    background-color: var(--sidelinkButton);
+    box-shadow: 5px 5px var(--sidelinkShadow);
+    border:none;
+    padding:5px 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top:30px;
 }
