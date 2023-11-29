@@ -16,7 +16,7 @@ let header = `
 <span id="social-links">
 <a href="https://www.instagram.com/melscatparty/" target="_blank" class="fa-brands fa-instagram"></a>
 <a href="https://github.com/melissa-underwood" target="_blank" class="fa-brands fa-github"></a>
-<a href="/Views/tumblr.html" target="_blank" class="fa-brands fa-tumblr"></a>
+<a href="https://www.tumblr.com/cogshell" target="_blank" class="fa-brands fa-tumblr"></a>
 <a href="https://www.goodreads.com/user/show/78022394-m-u" target="_blank" class="fa-brands fa-goodreads"></a>
 <a href="https://steamcommunity.com/id/cogshell/" target="_blank" class="fa-brands fa-steam"></a>
 </span>

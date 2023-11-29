@@ -1,0 +1,65 @@
+**Project Prompt: Landlord Management Portal**
+
+**Client Overview:**
+Our client is a landlord managing multiple residential properties and is looking for a comprehensive web portal to streamline property management tasks, enhance communication with tenants, and provide valuable insights into property performance. The goal is to create an efficient and user-friendly platform that improves the overall management experience for the landlord and enhances tenant satisfaction.
+
+**Key Objectives:**
+
+1. **Dashboard for Property Overview:**
+   - Design an intuitive dashboard that provides a snapshot of key metrics, including property occupancy, rental income, maintenance requests, and upcoming lease renewals.
+
+2. **Property Management Features:**
+   - Implement functionality for adding, updating, and removing property listings.
+   - Enable the landlord to track rental payments, expenses, and generate financial reports for individual properties.
+
+3. **Tenant Communication Hub:**
+   - Develop a communication system for sending announcements, notices, and updates to tenants.
+   - Implement a portal for tenants to submit maintenance requests, view lease details, and communicate with the landlord.
+
+4. **Lease Management:**
+   - Create a centralized system for managing lease agreements, including lease terms, renewal notifications, and document storage.
+
+5. **Payment and Invoicing System:**
+   - Integrate a secure online payment system for tenants to submit rent payments.
+   - Provide the landlord with tools to generate and track invoices for rent, utilities, and other charges.
+
+6. **Task and Maintenance Tracking:**
+   - Implement a task management system for the landlord to track and schedule property maintenance, repairs, and inspections.
+   - Allow tenants to submit maintenance requests through the portal, with a notification system for status updates.
+
+7. **Performance Analytics:**
+   - Develop analytics tools to provide insights into property performance, including occupancy rates, rental income trends, and expense breakdowns.
+
+**Technical Requirements:**
+
+- Use modern web development technologies and frameworks for a scalable and efficient solution.
+- Ensure data security and privacy, especially concerning tenant information.
+- Implement responsive design for optimal user experience on various devices.
+
+**Deliverables:**
+
+1. **Wireframes and Design Mockups:**
+   - Provide wireframes for key portal pages and design mockups for the overall interface.
+
+2. **Front-End Development:**
+   - Develop the client-side of the portal with a focus on usability and a responsive design.
+
+3. **Back-End Development:**
+   - Implement the necessary server-side functionality for property management, tenant communication, and analytics.
+
+4. **Testing:**
+   - Conduct thorough testing to identify and fix any bugs or issues.
+   - Ensure the portal works seamlessly across different browsers and devices.
+
+5. **Deployment:**
+   - Deploy the portal to a secure hosting environment.
+   - Provide documentation for system maintenance and updates.
+
+**Timeline:**
+The client expects the project to be completed within [X] weeks/months, with regular updates on progress.
+
+**Budget:**
+The budget for this project is [X] dollars, covering design, development, testing, and deployment phases.
+
+**Note:**
+The emphasis should be on creating a practical and efficient tool for the landlord to manage properties effectively while enhancing the tenant experience. Ensure compliance with relevant data protection laws and regulations.
