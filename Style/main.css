@@ -137,8 +137,10 @@ h1 {
 /**/
 
 .tooltip {
+    overflow-x: hidden;
+    overflow-wrap: break-word;
     position: absolute;
-    padding:15px;
+    padding:10px 20px;
     background-color: var(--sidelinkButton);
     box-shadow: 3px 3px var(--green);
     border-radius: 5px;
@@ -146,10 +148,10 @@ h1 {
 
 .tooltip-about {
     width:225px;
-    height:100px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    overflow-wrap: break-word;
+    font-weight: bold;
+
+    top:10px;
+    left:25px;
 }
 
 /* SCROLLBAR */
