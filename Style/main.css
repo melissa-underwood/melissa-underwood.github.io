@@ -39,7 +39,11 @@ h1 {
     line-height: 150%;
     border-radius: 15px;
     position:relative;
+    margin-top:5%;
+    margin-bottom:5%;
 }
+
+.card .title, a { color:var(--white); }
 
 /* SUB CARDS */
 .container { /*of cards*/
@@ -113,6 +117,15 @@ h1 {
     text-decoration: none;
     line-height: 1;
     font-size: 20px;
+}
+.side-links .fa-home {
+    width:auto;
+}
+.side-links .backhome { font-family: var(--bodyFont); padding:0px 10px; }
+.side-links .expandLinks { 
+    color:var(--quickLinkText);
+    background-color: var(--quickLinkButton);
+    box-shadow: 3px 3px var(--quickLinkShadow);
 }
 /**/
 

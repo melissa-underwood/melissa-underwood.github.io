@@ -16,36 +16,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/29dc434267.js" crossorigin="anonymous"></script>
 
-    <script>
-
-    function backtoTop() {
-        document.getElementById("container").scrollIntoView({behavior:"smooth"});
-
-    }
-    </script>
-
 </head>
 
-<body>
+<body onload="initializeHeader(); pageHeader()">
 <div id="container">
-    <div class="card index-card">
-        <div class="header-icon">
-            <img src="/Assets/Images/author.jpg">
-        </div>
-
-        <h1 id="header-title">MELISSA UNDERWOOD</h1>
-        <h2 id="header-email">melissanneunderwood@gmail.com</h2>
-
-        <div class="side-links">
-            <a href="/" class="fa fa-home"></a>
-        </div>
+    <div id="header" class="card index-card">
     </div>
 
     <div class="card container">
 
     <div id="education" class="card content">
         <span class="card-icon fa-solid fa-school"></span>
-
         <h1>Education</h1>
         <h2>Kent State University</h2>
         <h3>Bachelor of Science in Computer Science <span style="float:right;">August 2019 - <i>Present</i></span></h3>
@@ -58,7 +39,7 @@
     </div>
 
     <div id="workHistory" class="card content">
-        <span class="card-icon fa-solid fa-school"></span>
+        <span class="card-icon fa-solid fa-building"></span>
         <h1>Work History</h1>
         <h2>Vitalia Senior Living</h2>
         <h3>Receptionist <span style="float:right;">October 2023 - <i>Present</i></span></h3>
@@ -83,7 +64,7 @@
     </div>
 
     <div class="card content">
-        <span class="card-icon fa-solid fa-school"></span>
+        <span class="card-icon fa-solid fa-briefcase"></span>
         <h1>Skills</h1>
         <li>Quick learner</li>
         <li>Multitasking skills</li>

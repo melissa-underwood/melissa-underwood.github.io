@@ -2,9 +2,10 @@
 <head>
     <title>Melissa Underwood</title>
     <link href="/Style/main.css" rel="stylesheet">
+    <link href="/Style/about.css" rel="stylesheet">
     <link href="/Style/variables.css" rel="stylesheet">
 
-    <script type='text/javascript' src='https://cogshell.tumblr.com/js'></script>
+    <script src="/index.js"></script>
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,13 +14,25 @@
 
     <!-- ICONS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/29dc434267.js" crossorigin="anonymous"></script>
 </head>
 
-<body onload="singleCard()">
+<body onload="initializeHeader()">
 
 <div id="container">
-    <div class="card">
+    <div id="header" class="card index-card">
     </div>
+
+    <div class="card container">
+        <h1 class="title">page title</h1>
+        <div class="card content">
+        </div>
+    </div>
+
+    <footer class="closing-info">
+        <button onclick="backtoTop()"><span class="fa-solid fa-chevron-up"></span></button>
+    </footer>
 </div>
 
 </body>
