@@ -1,0 +1,82 @@
+.index-card {
+    width:40%;
+}
+
+.header-icon {
+    position:relative;
+}
+
+.header-icon img {
+    border:5px dashed var(--black);
+    width:75px;
+    padding:5px;
+    margin:0px 10px;
+}
+
+.header-icon p {
+    text-align: justify;
+    width:200px;
+}
+
+/* CARD BUTTON LINKS */
+.quick-links button  {
+    font-family:var(--bodyFont);
+    background-color: var(--quickLinkButton);
+    box-shadow: 3px 3px var(--quickLinkShadow);
+    border-radius: 5px;
+    color:var(--quickLinkText);
+    padding:10px 30px;
+    margin:5px 10px;
+    border:none;
+    font-weight: bold;
+}
+.quick-links button:hover { cursor:pointer; }
+.quick-links button a {
+    color:var(--quickLinkText);
+    text-decoration: none;
+}
+.quick-links .returnHome {
+    font-family:var(--bodyFont);
+    background-color: var(--sidelinkButton);
+    box-shadow: 3px 3px var(--sidelinkShadow);
+    color:var(--sidelinkText); 
+}
+.quick-links .returnHome a { 
+    color:var(--sidelinkText);
+    font-weight:bold;
+}
+/**/
+
+/* ICON LINKS */
+.side-links {
+    position:absolute;
+    left:20px;
+    top:0px;
+    list-style-type: none;
+    padding:0px;
+    border:0px;
+    margin:0px;
+}
+.side-links a {
+    display: list-item;
+    background-color: var(--sidelinkButton);
+    box-shadow: 3px 3px var(--sidelinkShadow);
+    border-radius: 5px;
+    padding:10px;
+    margin:15px 0px;
+    width:20px;
+    height:20px;
+    color:var(--sidelinkText);
+    text-decoration: none;
+    line-height: 1;
+    font-size: 20px;
+}
+.side-links .fa-home {
+    width:auto;
+}
+.side-links .expandLinks { 
+    color:var(--quickLinkText);
+    background-color: var(--quickLinkButton);
+    box-shadow: 3px 3px var(--quickLinkShadow);
+}
+/**/

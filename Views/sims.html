@@ -1,48 +1,210 @@
 <!DOCTYPE html>
 <head>
-    <title>Melissa Underwood</title>
-    <link href="/Style/main.css" rel="stylesheet">
-    <link href="/Style/about.css" rel="stylesheet">
-    <link href="/Style/variables.css" rel="stylesheet">
-
-    <script src="/index.js"></script>
-
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;800&display=swap" rel="stylesheet"> 
-
-    <!-- ICONS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script onload="initializeHead()" src="/index.js"></script>
     <script src="https://kit.fontawesome.com/29dc434267.js" crossorigin="anonymous"></script>
+
+    <link href="/Style/sims.css" rel="stylesheet">
+
+    <script>
+        const gens = document.getElementsByClassName("title");
+
+        function scrolltoView() {
+            gens[2].scrollIntoView({behavior: "smooth"});
+        }
+    </script>
 </head>
 
-<body onload="initializeHeader(); pageHeader()">
+<body onload="scrolltoView()">
 
 <div id="container">
-    <div id="header" class="card index-card">
+    <div id="header">
+        <a href="/"><button class="returnHome"> <span class="fa fa-home"></span> Back Home</button></a>
     </div>
 
+    <h1 class="page-title">The Grody Family</h1>
+
     <div class="card container">
-        <h1 class="title">The Grody Family</h1>
-        <div class="card content">
-            <p>Welcome to anything and everything Grody family. I started this family on March 23, 2023. I don't follow any specific rules besides no using money cheats. I make stuff up as I go along so that it helps keep my interest.</p>
+        <h1 class="title">FOUNDERS</h1>
+        <div class="card row">
+            <span class="relationship">
+            <article class="sim">
+                <img src="/Assets/Portraits/IzaiahGrody.png">
+                <h1>Izaiah Grody</h1>
+            </article>
+
+            <img class="relationship-status" src="/Assets/Relationship/Married.png" alt="married">
+
+            <article class="sim">
+                <img src="/Assets/Portraits/MoniqueGrody.png">
+                <h1>Monique Grody</h1>
+            </article>
+            </span>
         </div>
 
-        <div class="card content">
-            <h1>Overview</h1>
-            <h2>Generation 1</h2>
-            <h3>Founders</h3>
-            <h2>Generation 2</h2>
-            <h2>Generation 3</h2>
+        <h1 class="title">GENERATION TWO</h1>
+        <div class="card row">
+            <h2>Heir</h2>
+            <div class="relationship">
+            <article class="sim">
+                <img src="/Assets/Portraits/LeilaGrody.png">
+                <h1>Leila Grody</h1>
+                <div class="description">
+                    <h2>Career</h2>
+                        <li>Freelance Nectar Maker</li>
+                    <h2>Aspiration</h2>
+                        <li><span class="fa-solid fa-square-check"></span> Leader of the Pack</li>
+                    <h2>Traits</h2>
+                    <ul class="traits">
+                        <li>Loves Outdoors</li>
+                        <li>Cheerful</li>
+                        <li>Perfectionist</li>
+                        <li>Jealous</li>
+                        <li>Loyal</li>
+                        <li>Horse Lover</li>
+                        <li>Natural Leader</li>
+                        <li>Good Manners</li>
+                        <li>Idea Person</li>
+                        <li>Top Notch Infant</li>
+                        <li>Happy Toddler</li>
+                        <li>Responsible</li>
+                        <li>High Self-Esteem</li>
+                        <li>Gregarious</li>
+                        <li>Quick Learner</li>
+                        <li>Essence of Flavor</li>
+                        <li>Graduated Highschool Early</li>
+                    </ul>
+                </div>
+            </article>
+
+            <img class="relationship-status" src="/Assets/Relationship/Married.png" alt="married">
+
+            <article class="sim">
+                <img src="/Assets/Portraits/ArthurMorgan.png">
+                <h1>Arthur Morgan</h1>
+                <div class="description">
+                    <h2>Career</h2>
+                        <li>Stay At Home Dad</li>
+                    <h2>Aspiration</h2>
+                        <li>Championship Rider</li>
+                    <h2>Traits</h2>
+                    <ul class="traits">
+                        <li>Loves Outdoors</li>
+                        <li>Cheerful</li>
+                        <li>Perfectionist</li>
+                        <li>Active</li>
+                        <li>Loyal</li>
+                        <li>Horse Lover</li>
+                        <li>High Metabolism</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+        <h2>Spares</h2>
+            <article class="sim">
+                <img src="/Assets/Portraits/DanielGrody.png">
+                <h1>Daniel Grody</h1>
+            </article>
+            
+            <article class="sim">
+                <img src="/Assets/Portraits/SawyerGrody.png">
+                <h1>Sawyer Grody</h1>
+            </article>
         </div>
 
-        <div class="card content">
-        </div>
+        <h1 class="title">GENERATION THREE</h1>
+        <div class="card row">
+            <h2>Heir</h2>
+            <div class="relationship">
+            <article class="sim">
+                <img src="/Assets/Portraits/MarshallGrody.png">
+                <h1>Marshall Grody</h1>
+                <div class="description">
+                    <h2>Career</h2>
+                        <li>Salaryperson</li>
+                    <h2>Hobby</h2>
+                        <li>Rock climbing</li>
+                        <li>Snow boarding</li>
+                    <h2>Aspiration</h2>
+                        <li>Extreme Sports Enthusiast</li>
+                    <h2>Traits</h2>
+                    <ul class="traits">
+                        <li>Genius</li>
+                        <li>Ambitious</li>
+                        <li>Adventurous</li>
+                        <li>Happy Infant</li>
+                        <li>Good Manners</li>
+                        <li>High Self-Esteem</li>
+                        <li>Domestic</li>
+                        <li>High Metabolism</li>
+                    </ul>
+                </div>
+            </article>
 
-        <div class="card content">
+            <img class="relationship-status" src="/Assets/Relationship/Dating.png" alt="dating">
+
+            <article class="sim">
+                <img src="/Assets/Portraits/HazelBradshaw.png">
+                <h1>Hazel Bradshaw</h1>
+            </article>
+            </div>
+
+            <article class="sim">
+                <img src="/Assets/Portraits/MollieGrody.png">
+                <h1>Mollie Grody</h1>
+                <div class="description">
+                    <h2>Career</h2>
+                        <li>Student</li>
+                    <h2>Aspiration</h2>
+                        <li>Party Animal</li>
+                    <h2>Traits</h2>
+                    <ul class="traits">
+                        <li>Squeamish</li>
+                        <li>Goofball</li>
+                        <li>Top Notch Infant</li>
+                        <li>High Self-Esteem</li>
+                        <li>Gregarious</li>
+                    </ul>
+                </div>
+            </article>
+            
+            <article class="sim">
+                <img src="/Assets/Portraits/MarissaGrody.png">
+                <h1>Marissa Grody</h1>
+                <div class="description">
+                    <h2>Career</h2>
+                        <li>Student</li>
+                    <h2>Aspiration</h2>
+                        <li>Market Magnate</li>
+                    <h2>Traits</h2>
+                    <ul class="traits">
+                        <li>Slob</li>
+                        <li>Loves Outdoors</li>
+                        <li>Top Notch Infant</li>
+                        <li>High Self-Esteem</li>
+                        <li>Business Savvy</li>
+                    </ul>
+                </div>
+            </article>
+            
+            <article class="sim">
+                <img src="/Assets/Portraits/MarcusGrody.png">
+                <h1>Marcus Grody</h1>
+                <div class="description">
+                    <h2>Career</h2>
+                        <li>Student</li>
+                    <h2>Aspiration</h2>
+                        <li>Perfectly Pristine</li>
+                    <h2>Traits</h2>
+                    <ul class="traits">
+                        <li>Materialistic</li>
+                        <li>Creative</li>
+                        <li>Top Notch Infant</li>
+                        <li>High Self-Esteem</li>
+                    </ul>
+                </div>
+            </article>
         </div>
+        
     </div>
 
     <footer class="closing-info">

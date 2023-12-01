@@ -1,7 +1,7 @@
 :root {
     /* FONTS */
     --bodyFont:'Karla', sans-serif;
-    --headingText:'Gluten';
+    --cursive:'Beth Ellen', cursive;
     
     /* PRIMARY COLORS */
     --white:#ffffff;
@@ -9,8 +9,9 @@
     --green:#52e046;
     --blue:#2AB7CA;
     --yellow:#FED766;
+    --purple:#700548;
+    --black:#121113;
 
-    --pageBackground:#121113;
     --cardBackground:#1d1b1f;
     --bodyColor:#222725;
 
@@ -25,4 +26,6 @@
     --sidelinkText:#121113;
 
     --debug:rgb(8, 222, 19);
+
+    /* //////////////////////////////////////////////////////////////////////// */
 }

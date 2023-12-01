@@ -13,7 +13,7 @@
 }
 
 .card-icon {
-    background-color: var(--pageBackground);
+    background-color: var(--black);
     color:var(--white);
     border-radius: 15px;
     box-shadow: 5px 5px var(--blue);

@@ -7,7 +7,7 @@ let header = `
 <h2 id="header-email">melissanneunderwood@gmail.com</h2>
 
 <div id="quick-links" class="quick-links">
-<button><s>About</s></button>
+<a href="/about.html"><button>About</button></a>
 <a href="/resume.html"><button>Resume</button></a>
 <a href=""><button><s>Projects</s></button></a>
 </div>
@@ -23,8 +23,28 @@ let header = `
 </div>
 `;
 
+let heads = `
+<title>Melissa Underwood</title>
+<link href="/Style/main.css" rel="stylesheet">
+<link href="/Style/header.css" rel="stylesheet">
+<link href="/Style/variables.css" rel="stylesheet">
+
+<script src="/index.js"></script>
+
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;800&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap" rel="stylesheet">
+
+
+<!-- ICONS -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+`;
+
 let returnHome = `
-<a id="returnHome" href="/" class="returnHome fa fa-home"><span class="backhome">Back Home<span></a>
+<a href="/index.html"><button class="returnHome"> <span class="fa fa-home"></span> Back Home</button></a>
 `;
 
 let expandLinks = `
@@ -38,6 +58,10 @@ function initializeHeader() {
     document.getElementById("header").innerHTML = header;
 }
 
+function initializeHead() {
+    document.head.innerHTML += heads;
+}
+
 // CENTER'S HEADER CARD
 function centerHeader() {
     cont = document.getElementById("container");
@@ -49,10 +73,10 @@ function centerHeader() {
 }
 
 function pageHeader() {
-    document.getElementById("quick-links").style.visibility = "hidden";
+    document.getElementById("quick-links").innerHTML = returnHome;
 
     let tmp = document.getElementById("side-links").innerHTML;
-    document.getElementById("side-links").innerHTML = returnHome + tmp + expandLinks;
+    document.getElementById("side-links").innerHTML = expandLinks + tmp;
 
     document.getElementById("social-links").style.display = "none";
 
