@@ -25,6 +25,7 @@ let header = `
 
 let heads = `
 <title>Melissa Underwood</title>
+<link rel="icon" type="image/x-icon" href="/Assets/Images/author.jpg">
 <link href="/Style/main.css" rel="stylesheet">
 <link href="/Style/header.css" rel="stylesheet">
 <link href="/Style/variables.css" rel="stylesheet">
