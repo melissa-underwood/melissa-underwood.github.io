@@ -59,8 +59,9 @@ let projectsHTML = `
 
 `;
 
-/* initialize index */
-document.getElementById("main-container").innerHTML = indexHTML;
+function loadIndex() {
+    document.getElementById("main-container").innerHTML = indexHTML;
+}
 
 function loadAbout() {
     document.getElementById("main-container").innerHTML = aboutHTML;
