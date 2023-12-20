@@ -1,105 +1,76 @@
-let header = `
-<div class="header-icon">
-<a href="/"><img src="/Assets/Images/author.jpg"></a>
-</div>
-
-<h1 id="header-title">MELISSA UNDERWOOD</h1>
-<h2 id="header-email">melissanneunderwood@gmail.com</h2>
-
-<div id="quick-links" class="quick-links">
-<a href="/about.html"><button>About</button></a>
-<a href="/resume.html"><button>Resume</button></a>
-<a href=""><button><s>Projects</s></button></a>
-</div>
-
-<div id="side-links" class="side-links">
-<span id="social-links">
-<a href="https://www.instagram.com/melscatparty/" target="_blank" class="fa-brands fa-instagram"></a>
-<a href="https://github.com/melissa-underwood" target="_blank" class="fa-brands fa-github"></a>
-<a href="https://www.tumblr.com/cogshell" target="_blank" class="fa-brands fa-tumblr"></a>
-<a href="https://www.goodreads.com/user/show/78022394-m-u" target="_blank" class="fa-brands fa-goodreads"></a>
-<a href="https://steamcommunity.com/id/cogshell/" target="_blank" class="fa-brands fa-steam"></a>
-</span>
+let indexHTML = `
+<div class="card box10-purple">
+<h1>Hi</h1>
+<p>Welcome to my page! It's under major construction right now but feel free to look around!</p>
 </div>
 `;
 
-let heads = `
-<title>Melissa Underwood</title>
-<link rel="icon" type="image/x-icon" href="/Assets/Images/author.jpg">
-<link href="/Style/main.css" rel="stylesheet">
-<link href="/Style/header.css" rel="stylesheet">
-<link href="/Style/variables.css" rel="stylesheet">
+let aboutHTML = `
 
-<script src="/index.js"></script>
-
-<!-- FONTS -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;800&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap" rel="stylesheet">
-
-
-<!-- ICONS -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
 `;
 
-let returnHome = `
-<a href="/index.html"><button class="returnHome"> <span class="fa fa-home"></span> Back Home</button></a>
+
+let resumeHTML = `
+<div id="education" class="card box25-red">
+<span class="card-title"><p>Education</p></span>
+    <h1>Kent State University</h1>
+    <h2>Bachelor of Science in Computer Science</h2>
+    <h3>Relevant Courses</h3>
+    <ul>
+        <li>CSI: Procedural Programming, Object Oriented Programming</li>
+        <li>CSII: Data Structures</li>
+        <li>CSIII: Programming Patterns</li>
+        <li>Intro to Database System Design</li>
+        <li>Software Engineering</li>
+    </ul>
+</div>
+
+<div id="work-history" class="card box25-green">
+<span class="card-title"><p>Work History</p></span>
+    <h1>Vitalia Senior Living</h1>
+        <h2>Receptionist</h2>
+        <h2>Server</h2>
+    <h1>Walmart</h1>
+</div>
+
+<div id="skills" class="card box25-yellow">
+<span class="card-title"><p>Skills</p></span>
+    <h1>General</h1>
+    <ul>
+        <li>Quick Learner</li>
+        <li>Multitasking Skills</li>
+        <li>Microsoft Office</li>
+        <li>Photoshop</li>
+    </ul>
+    <h1>Languages</h1>
+    <ul>
+        <li>English</li>
+        <li>Filipino (Cebuano/Bisaya)</li>
+    </ul>
+    <h1>Programming Languages</h1>
+    <ul>
+        <li>C++</li>
+        <li>HTML, CSS, Javascript</li>
+    </ul>
+</div>
 `;
 
-let expandLinks = `
-<a id="expandLinks" onclick="toggleSocialLinks()" class="expandLinks fa fa-plus"></a>
+let projectsHTML = `
+
 `;
 
-//<a id="returnHome" href="/" class="fa fa-home"><span class="backhome">Back Home<span></a>
-//<a class="fa fa-chevron-down"></a>
+/* initialize index */
+document.getElementById("main-container").innerHTML = indexHTML;
 
-function initializeHeader() {
-    document.getElementById("header").innerHTML = header;
+function loadAbout() {
+    document.getElementById("main-container").innerHTML = aboutHTML;
 }
 
-function initializeHead() {
-    document.head.innerHTML += heads;
+function loadResume() {
+    document.getElementById("main-container").innerHTML = resumeHTML;
 }
 
-// CENTER'S HEADER CARD
-function centerHeader() {
-    cont = document.getElementById("container");
-    cont.style.top = "50%";
-    //cont.style.webkitTransform = "translateY(-50%)";
-    //cont.style.mstransform = "translateY(-50%)";
-    cont.style.transform = "translateY(-50%)";
+function loadProjects() {
+    document.getElementById("main-container").innerHTML = projectsHTML;
 
 }
-
-function pageHeader() {
-    document.getElementById("quick-links").innerHTML = returnHome;
-
-    let tmp = document.getElementById("side-links").innerHTML;
-    document.getElementById("side-links").innerHTML = expandLinks + tmp;
-
-    document.getElementById("social-links").style.display = "none";
-
-}
-
-function toggleSocialLinks() {
-    let socialmediaList = document.getElementById("social-links");
-    let expandList = document.getElementById("expandLinks").classList;
-
-    if (expandList.contains("fa-plus")) {
-        socialmediaList.style.display = "inline";
-        expandList.remove("fa-plus");
-        expandList.add("fa-minus");
-    } else if (expandList.contains("fa-minus")) {
-        socialmediaList.style.display = "none";
-        expandList.remove("fa-minus");
-        expandList.add("fa-plus");
-
-    }
-}
-
-function backtoTop() {
-    document.getElementById("container").scrollIntoView({behavior:"smooth"});
-}
-

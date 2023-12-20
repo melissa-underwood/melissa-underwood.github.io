@@ -1,32 +1,28 @@
+@font-face { font-family: Handwrite; src: url('/Assets/Fonts/Handwrittenfont-Regular.ttf'); } 
+
 :root {
-    /* FONTS */
-    --bodyFont:'Karla', sans-serif;
-    --cursive:'Beth Ellen', cursive;
-    
-    /* PRIMARY COLORS */
-    --white:#ffffff;
-    --red:#FE4A49;
-    --green:#52e046;
-    --blue:#2AB7CA;
-    --yellow:#FED766;
-    --purple:#700548;
     --black:#121113;
-    --grey:#E6E6EA;
+    --white:#ffffff;
+    --red: #FE4A49;
+    --green: #52e046;
+    --blue: #2AB7CA;
+    --yellow: #FED766;
+    --purple: #700548;
 
-    --cardBackground:#1d1b1f;
-    --bodyColor:#222725;
-
-    /* QUICK LINK */
-    --quickLinkButton:#121113;
-    --quickLinkShadow:#2AB7CA;
-    --quickLinkText:#F7F7F2;
-
-    /* SIDE LINKS */
-    --sidelinkButton:#E6E6EA;
-    --sidelinkShadow:#FED766;
-    --sidelinkText:#121113;
-
-    --debug:rgb(8, 222, 19);
-
-    /* //////////////////////////////////////////////////////////////////////// */
+    --title:'Karla';
+    --body:'Karla';
 }
+
+/* BOX SHADOW COLORINGS */
+.box10-red { box-shadow:10px 10px var(--red);}
+.box10-green { box-shadow:10px 10px var(--green);}
+.box10-blue { box-shadow:10px 10px var(--blue);}
+.box10-yellow { box-shadow:10px 10px var(--yellow);}
+.box10-purple { box-shadow:10px 10px var(--purple);}
+
+.box25-red { box-shadow:-10px -30px var(--red);}
+.box25-green { box-shadow:-10px -30px var(--green);}
+.box25-blue { box-shadow:-10px -30px var(--blue);}
+.box25-yellow { box-shadow:-10px -30px var(--yellow);}
+.box25-purple { box-shadow:-10px -30px var(--purple);}
+

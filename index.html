@@ -1,15 +1,42 @@
 <!DOCTYPE html>
-<head>
-    <script onload="initializeHead()" src="/index.js"></script>
-    <script src="https://kit.fontawesome.com/29dc434267.js" crossorigin="anonymous"></script>
-</head>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body onload="initializeHeader(); centerHeader()">
+        <link rel="stylesheet" href="/Style/variables.css">
+        <link rel="stylesheet" href="/Style/index.css">
 
-<div id="container">
-    <div id="header" class="card index-card">
-    </div>
-</div>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
 
-</body>
+        
+    </head>
+    <body>
+        <div id="header" class="header">
+            <img id="portrait" class="header-portrait" src="/Assets/Images/author.jpg">
+            <h1>Melissa Underwood</h1>
+            <h2>melissanneunderwood@gmail.com</h2>
+        </div>
+        <div id="navigation" class="navigation">
+                <a href="/"><button>Home</button></a>
+                <a onclick="loadAbout()"><button>About</button></a>
+                <a onclick="loadResume()"><button>Resume</button></a>
+                <a onclick="loadProjects()"><button>Projects</button></a>
+                <a onclick="loadBlog()"><button>Blog</button></a>
+        </div>
+        
+        <div id="main-container" class="container">
+        <div class="card">
+            <h1>Uhh.. you're not supposed to be seeing this.</h1>
+            <p>Computer, ensure the script is working.</p>
+        </div>
+        </div>
+        
+        <script src="/index.js"></script>
+    </body>
 </html>
