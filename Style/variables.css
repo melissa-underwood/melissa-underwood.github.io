@@ -1,8 +1,11 @@
 @font-face { font-family: Handwrite; src: url('/Assets/Fonts/Handwrittenfont-Regular.ttf'); } 
 
 :root {
-    --black:#121113;
-    --white:#ffffff;
+    --black:#121212;
+    --Lblack:#202020;
+    --white:#eee9e5;
+    --white2:#cac6c2;
+    --grey:#71706f;
     --red: #FE4A49;
     --green: #52e046;
     --blue: #2AB7CA;
