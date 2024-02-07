@@ -1,80 +1,88 @@
 body {
-    margin:0px;
-    padding:0px;
-    text-align:center;
-    font-family: Karla;
-    background-color: var(--white);
-    overflow: scroll;
-
+    font-family:var(--body);
+    background-color: var(--black);
+    overflow-x: hidden;
 }
 
+/* used for centering main header */
+.center {
+    width:50%;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* header styling */
 #header {
-    width:100%;
-    background-color: var(--white2);
-    color:#71706f;
-    padding:30px 0px;
+    background-color: var(--lblack);
+    border:5px solid var(--white);
+    margin-top:50px;
+    border-radius:10px;
+    padding:40px;
+    color:var(--white);
+    text-align:center;
 }
 
 #header h1 {
     text-transform: uppercase;
+    font-family:'Handwrite';
+    padding:5px;
+    margin:5px;
+}
+
+#header p {
+    padding:5px;
+    margin:5px;
 }
 
 #portrait {
-    width:150px;
-    padding:20px;
-    background-color: var(--white);
+    width:75px;
+    padding:10px;
+    border:5px dashed var(--green);
+    margin-bottom:10px;
+}
+
+#links {
+    padding:15px;
 }
 
 #links a {
-    font-family: Handwrite;
-    display:block;
-    width:50%;
-    margin:20px auto;
-    padding:20px;
-    font-size:25px;
-    text-decoration: none;
-    color:var(--white);
-    font-weight: bold;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-}
-
-#footer {
+    padding:5px 20px;
     background-color: var(--black);
-    width:100%;
-    position: absolute;
-    bottom: 0;
+    margin:5px 10px;
+    color:#ffffff;
+    border:none;
+    text-decoration: none;
+    border-radius:5px;
+    border:2px solid var(--white);
+    box-shadow:3px 3px var(--yellow);
+    font-weight:bold;
+}
+
+#links a:hover {
+    background-color: var(--yellow);
+    box-shadow:3px 3px var(--white);
+    color:var(--black);
+}
+/* end of header styling */
+
+.card {
+    margin:5% auto;
+    background-color: #ffffff;
+    padding:20px;
+    border-radius:10px;
+}
+
+.content {
+    padding:15px;
+}
+
+.content h1, h2 {
     text-align:center;
-    padding:30px 0px;
-    color:var(--white);
 }
 
-.accent1 {
-    background-color:#32393f;
-    border:5px solid #1c2024;
+/* education card styling */
+#education h1 {
+    text-transform: uppercase;
+    font-weight:800;
 }
-
-.accent1:hover {
-    background-color:#1c2024;
-
-}
-
-.accent2 {
-    background-color:#ad8f87;
-    border:5px solid #7a615a;
-}
-
-.accent2:hover {
-    background-color:#7a615a;
-
-}
-
-.accent3 {
-    background-color:#7d877c;
-    border:5px solid #596058;
-}
-
-.accent3:hover {
-    background-color:#596058;
-}
-
