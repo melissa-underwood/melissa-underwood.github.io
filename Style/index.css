@@ -81,6 +81,23 @@ body {
     text-align:center;
 }
 
+.icon, .expand {
+    width:100%;
+    text-align: center;
+}
+
+.icon i {
+    background-color: var(--purple);
+    color:var(--white);
+    padding:10px;
+    border-radius:5px;
+    box-shadow:3px 3px var(--green);
+}
+
+.expand button {
+    width:40px;
+}
+
 /* education card styling */
 #education h1 {
     text-transform: uppercase;
