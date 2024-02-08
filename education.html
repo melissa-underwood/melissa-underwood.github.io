@@ -26,10 +26,10 @@
             <h1>Melissa Underwood</h1>
             <p>Hello World! Welcome to my little corner on the internet.</p>
 
-            <div id="links" class="links">
+            <div id="quick-links" class="quick-links">
                 <a href="/">Home</a>
                 <a href="">About</a>
-                <a href="/education.html">Education</a>
+                <a href="/education.html">Experience</a>
             </div>
         </div>
 
@@ -51,28 +51,28 @@
         </div>
         </div>
 
-        <div id="work-history" class="card center">
-        <div class="content">
+        <div  class="card center">
+        <div id="work-history" class="content">
             <div class="icon"><i class="fa-solid fa-briefcase"></i></div>
             <h1>Work History</h1>
-            <h2>Vitalia Senior Living</h2>
+            <h2 style="text-align:left;">Vitalia Senior Living <span style="float:right;">March 2022 - Present</span></h2>
             <h3>Receptionist</h3>
             <h3>Dietary Server</h3>
 
-            <div class="expand"><button id="expand_work"><i class="fa-solid fa-caret-down"></i></button></div>
+            <div class="expand"><button id="expand_work" onclick="showWorkHistory()"><i class="fa-solid fa-caret-down"></i></button></div>
 
         </div>
         </div>
 
         <script>
             workhistory = document.getElementById("work-history");
-            workhistorybutton = document.getElementById("expand_work");
-            workhistorybutton.addEventListener("click", function() {
-                workhistory.innerHTML += "<h2>Walmart</h2>";
+            function showWorkHistory() {
+                workhistory.innerHTML += "<h2 style=\"text-align:left;\">Walmart<span style=\"float:right;\">April 2020 - February 2022</span></h2>";
                 workhistory.innerHTML += "<h3>Food/Consumables Associate</h3>";
                 workhistory.innerHTML += "<h3>Cap 2 Stocking Associate</h3>";
-                this.style.display = 'none';
-            });
+                document.getElementById("expand_work").style.display = "none";
+
+            }
         </script>
         
     </body>

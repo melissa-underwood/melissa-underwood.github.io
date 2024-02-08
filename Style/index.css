@@ -42,11 +42,11 @@ body {
     margin-bottom:10px;
 }
 
-#links {
+#quick-links {
     padding:15px;
 }
 
-#links a {
+#quick-links a {
     padding:5px 20px;
     background-color: var(--black);
     margin:5px 10px;
@@ -59,7 +59,7 @@ body {
     font-weight:bold;
 }
 
-#links a:hover {
+#quick-links a:hover {
     background-color: var(--yellow);
     box-shadow:3px 3px var(--white);
     color:var(--black);
@@ -98,8 +98,31 @@ body {
     width:40px;
 }
 
+/* link block */
+#links {
+    text-align: center;
+}
+
+#links a {
+    font-size:20px;
+    padding:10px 30px;
+    margin:10px 10px;
+    text-decoration: none;
+    color:var(--white);
+    background-color: var(--purple);
+    border-radius:5px;
+}
+
+#links a:hover {
+    background-color: var(--red);
+}
+
 /* education card styling */
 #education h1 {
     text-transform: uppercase;
     font-weight:800;
+}
+
+#goodreads_challenge_2024 a {
+    color:black;
 }
