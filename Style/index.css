@@ -1,134 +1,58 @@
 body {
-    font-family:var(--body);
-    background-color: var(--black);
-    overflow-x: hidden;
+    background-color: #ACC4AB;
+    font-family: "Montserrat", sans-serif;
 }
 
-/* used for centering main header */
-.center {
-    width:50%;
-    position:relative;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-/* header styling */
-#header {
-    background-color: var(--lblack);
-    border:5px solid var(--white);
-    margin-top:50px;
-    border-radius:10px;
-    padding:40px;
-    color:var(--white);
-    text-align:center;
-}
-
-#header h1 {
-    text-transform: uppercase;
-    font-family:'Handwrite';
-    padding:5px;
-    margin:5px;
-}
-
-#header p {
-    padding:5px;
-    margin:5px;
-}
-
-#portrait {
-    width:75px;
-    padding:10px;
-    border:5px dashed var(--green);
-    margin-bottom:10px;
-}
-
-#quick-links {
-    padding:15px;
-}
-
-#quick-links a {
-    padding:5px 20px;
-    background-color: var(--black);
-    margin:5px 10px;
-    color:#ffffff;
-    border:none;
-    text-decoration: none;
-    border-radius:5px;
-    border:2px solid var(--white);
-    box-shadow:3px 3px var(--yellow);
-    font-weight:bold;
-}
-
-#quick-links a:hover {
-    background-color: var(--yellow);
-    box-shadow:3px 3px var(--white);
-    color:var(--black);
-}
-
-.lightSwitch {
-    margin:0px;
-    padding:10px;
-    float:left;
-}
-/* end of header styling */
-
-.card {
-    margin:5% auto;
-    background-color: #ffffff;
-    padding:20px;
-    border-radius:10px;
+.header {
+    width:100%;
+    height:100%;
 }
 
 .content {
-    padding:15px;
+    width:75%;
+    margin:50px auto;
 }
 
-.content h1, h2 {
-    text-align:center;
+.content .card {
+    padding:40px 50px;
 }
 
-.icon, .expand {
-    width:100%;
-    text-align: center;
+.row {
+    display:flex;
+    flex-direction: row;
+    margin:5% auto auto auto;
+    width:fit-content;
 }
 
-.icon i {
-    background-color: var(--purple);
-    color:var(--white);
-    padding:10px;
-    border-radius:5px;
-    box-shadow:3px 3px var(--green);
+.card {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding:40px 150px;
+    margin:10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+    height:max-content;
 }
 
-.expand button {
-    width:40px;
+.card-nav {
+    margin:20px;
 }
 
-/* link block */
-#links {
-    text-align: center;
+.card-nav a {
+    margin:0px 10px;
 }
 
-#links a {
-    font-size:20px;
-    padding:10px 30px;
-    margin:10px 10px;
-    text-decoration: none;
-    color:var(--white);
-    background-color: var(--purple);
-    border-radius:5px;
-}
+/* responsive screening */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+        width:100%;
+        margin:0px;
+    }
 
-#links a:hover {
-    background-color: var(--red);
-}
-
-/* education card styling */
-#education h1 {
-    text-transform: uppercase;
-    font-weight:800;
-}
-
-#goodreads_challenge_2024 a {
-    color:black;
+    .card {
+        width:fit-content;
+        padding:10px;
+        margin:0px;
+        box-shadow: none;
+    }
 }
